@@ -37,7 +37,19 @@
             </roles>
             <timezone>Europe/Vienna</timezone>
         </developer>
-    </developers>
+        <developer>
+        <id>dennigRosa</id>
+        <name>Rosa Dennig</name>
+        <email>rosa.dennig@fh-joanneum.at</email>
+        <url>https://github.com/rosaDennig</url>
+        <organization>FH JOANNEUM GmbH</organization>
+        <organizationUrl>https://www.fh-joanneum.at</organizationUrl>
+        <roles>
+            <role>Student</role>
+        </roles>
+        <timezone>Europe/Vienna</timezone>
+    </developer>
+</developers>
 
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
