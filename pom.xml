@@ -25,6 +25,18 @@
             </roles>
             <timezone>Europe/Vienna</timezone>
         </developer>
+        <developer>
+            <id>bichaStefan</id>
+            <name>Stefan Bicha</name>
+            <email>stefan.bicha@fh-joanneum.at</email>
+            <url>https://github.com/stefanbicha</url>
+            <organization>FH JOANNEUM GmbH</organization>
+            <organizationUrl>https://www.fh-joanneum.at</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+        </developer>
     </developers>
 
     <properties>
