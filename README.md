@@ -3,8 +3,8 @@
 >+ Rosa Dennig
 >+ Abdullah Kaitoua
 
-- [ ] pom.xml extend
-- [ ] correct mistakes
+- [x] pom.xml extend
+- [x] correct mistakes
 - [ ] new implementation
 - [ ] create tests
 - [ ] bonus exercise for 3
