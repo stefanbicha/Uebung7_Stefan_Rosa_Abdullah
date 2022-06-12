@@ -7,7 +7,11 @@
 - [x] extend pom.xml by Abdullah Kaitoua
 - [x] correct mistakes in StringQueue by Stefan Bicha and Abdullah Kaitoua
 - [x] Integrate the Drinks and make new implementation by Stefan Bicha and Abdullah Kaitoua
-- [ ] Implement methods by all 
-- [ ] create tests
+- [x] Implement poll and offer method methods by Abdullah
+- [ ] by rosa
+- [ ] by stefan
+- [x] create testCase for the Class StringQueue by Abdullah 
+- [ ] create testCase by rosa
+- [ ] create by stefan
 - [ ] bonus exercise for 3
 - [ ] maven site documentation
