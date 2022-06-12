@@ -14,4 +14,4 @@
 - [ ] create JUnit tests for ... by rosa
 - [ ] create JUnit tests for ... by stefan
 - [x] add DoubleQueue class by Abdullah Kaitoua
-- [ ] maven site documentation
+- [x] maven site documentation by Abdullah Kaitoua
