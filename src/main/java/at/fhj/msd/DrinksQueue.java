@@ -4,44 +4,56 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-// there's some Bugs included, try to debug the code and fix the Bugs
-// there are different Bugs, wrong implementation, typos, ...
-// write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
 
+/**
+ * represents a menu of drinks
+ * @author  Abdullah Kaiouta,Rosa Dennig, Stefan Bicha
+ */
 public class DrinksQueue implements IQueue {
 
-  private List<String> elements = new ArrayList<String>();
-  private int maxSize;//deleted the standard value 5
+  private List<Drink> drinks = new ArrayList();
+  private int maxSize;
 
   public DrinksQueue(int maxSize) {
     this.maxSize = maxSize;
   }
 
+  /**
+   * adds a drink to the menu
+   * @param obj the drink
+   * @return true when a drink was added otherwise false
+   * @author Abdullah Kaitoua
+   */
   @Override
-  public boolean offer(String obj) {
-    if (elements.size() != maxSize)
-      elements.add(obj);
+  public boolean offer(Object obj) {
+    if (drinks.size() != maxSize)
+      drinks.add((SimpleDrink) obj);
     else
       return false;
 
     return true;
   }
 
+  /**
+   * gets the first drink on the list and removes it
+   * @return the first drink if exists
+   * @ Author Abdullah Kaitoua
+   */
   @Override
-  public String poll() {
-    String element = peek();
+  public Object poll() {
+    Object element = peek();
 
-    if (elements.size() > 0) {//==  --> >
-      elements.remove(0);
+    if (drinks.size() > 0) {
+      drinks.remove(element);
     }
 
     return element;
   }
 
   @Override
-  public String remove() {
-    String element = poll();
-    //element = "";   auskommentiert
+  public Object remove() {
+    Object element = poll();
+
     if (element == null)
       throw new NoSuchElementException("there's no element any more");
 
@@ -49,10 +61,10 @@ public class DrinksQueue implements IQueue {
   }
 
   @Override
-  public String peek() {
-    String element;
-    if (elements.size() > 0)
-      element = elements.get(0);
+  public Object peek() {
+    Object element;
+    if (drinks.size() > 0)
+      element = drinks.get(0);
     else
       element = null;
 
@@ -60,8 +72,8 @@ public class DrinksQueue implements IQueue {
   }
 
   @Override
-  public String element() {
-    String element = peek();
+  public Object element() {
+    Object element = peek();
     if (element == null)
       throw new NoSuchElementException("there's no element any more");
 
