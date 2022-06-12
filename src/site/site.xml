@@ -1,0 +1,14 @@
+<project name="Kaitoua Dennig Bicha">
+    <publishDate position="right"/>
+    <version position="left"/>
+    <body>
+        <menu name="Overview">
+            <item name="Kaitoua" href="kaitoua.html"/>
+            <item name="Dennig" href="dennig.html"/>
+            <item name="Bicha" href="bicha.html"/>
+        </menu>
+        <menu ref="reports"/>
+        <menu ref="parent"/>
+        <menu ref="modules"/>
+    </body>
+</project>
