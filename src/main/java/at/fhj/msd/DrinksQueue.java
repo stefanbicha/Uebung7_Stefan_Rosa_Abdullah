@@ -50,6 +50,11 @@ public class DrinksQueue implements IQueue {
     return element;
   }
 
+
+  /**
+   * deletes object, but if no object throws NoSuchElementException
+   * @author Abdullah Kaitoua
+   */
   @Override
   public Object remove() {
     Object element = poll();
@@ -60,6 +65,11 @@ public class DrinksQueue implements IQueue {
     return element;
   }
 
+  /**
+   * gives first Object but does not delete
+   * @return null if there is no object otherwise returns object
+   * @author Abdullah Kaitoua
+   */
   @Override
   public Object peek() {
     Object element;
@@ -71,6 +81,11 @@ public class DrinksQueue implements IQueue {
     return element;
   }
 
+  /**
+   * gives first object but does not delete
+   * @return throws NoSuchElementException if there is no object otherwise returns object
+   * @author Abdullah Kaitoua
+   */
   @Override
   public Object element() {
     Object element = peek();

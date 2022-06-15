@@ -34,7 +34,7 @@ public class DoubleQueue implements IQueue {
     }
 
     /**
-     * gets the first double object on the list and removes it
+     * gets the first double on the list and removes it
      * @return the first double if exists
      * @ Author Abdullah Kaitoua
      */
@@ -49,6 +49,11 @@ public class DoubleQueue implements IQueue {
         return element;
     }
 
+
+    /**
+     * deletes double, but if no double throws NoSuchElementException
+     * @author Abdullah Kaitoua
+     */
     @Override
     public Object remove() {
         Object element = poll();
@@ -59,6 +64,11 @@ public class DoubleQueue implements IQueue {
         return element;
     }
 
+    /**
+     * gives first double but does not delete
+     * @return null if there is no double otherwise returns double
+     * @author Abdullah Kaitoua
+     */
     @Override
     public Object peek() {
         Object element;
@@ -70,6 +80,11 @@ public class DoubleQueue implements IQueue {
         return element;
     }
 
+    /**
+     * gives first double but does not delete
+     * @return throws NoSuchElementException if there is no double otherwise returns double
+     * @author Abdullah Kaitoua
+     */
     @Override
     public Object element() {
         Object element = peek();
