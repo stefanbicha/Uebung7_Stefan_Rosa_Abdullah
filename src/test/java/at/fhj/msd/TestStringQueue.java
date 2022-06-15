@@ -15,7 +15,7 @@ public class TestStringQueue {
     private StringQueue stringQueue;
 
     /**
-     * creates a new object of stringQueue  (maxSize = 11) before each test case
+     * creates a new object of stringQueue  (maxSize = 2) before each test case
      * */
     @BeforeEach
     public void setUp(){
@@ -24,7 +24,7 @@ public class TestStringQueue {
 
 
     /**
-     * if it returns true if a String was given as parameter to add
+     * returns true if a String was given as parameter to add
      */
     @Test
     public void testOfferA(){
