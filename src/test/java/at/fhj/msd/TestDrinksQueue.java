@@ -29,7 +29,7 @@ public class TestDrinksQueue {
      */
     @Test
     public void testOfferA(){
-        String test = "test A";
+        Drink test = new SimpleDrink("test Drink A",new Liquid("wodka",30.8,30.2));
         drinksQueue.offer(test);
         Assertions.assertTrue(drinksQueue.offer(test));
     }
