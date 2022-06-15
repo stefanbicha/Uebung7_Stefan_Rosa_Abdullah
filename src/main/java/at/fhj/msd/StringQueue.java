@@ -48,7 +48,11 @@ public class StringQueue implements IQueue {
     }
     return element;
   }
-
+  /**
+   * gets the first string in the list and removes it
+   * @return the first string if exists
+   * @ Author Rosa Dennig
+   */
   @Override
   public String remove() {
     String element = poll();
