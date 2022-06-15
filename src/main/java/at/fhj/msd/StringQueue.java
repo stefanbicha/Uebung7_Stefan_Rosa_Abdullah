@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 /**
- * represents a menu of strings
+ * represents a list of strings
  * @author  Abdullah Kaiouta,Rosa Dennig, Stefan Bicha
  */
 public class StringQueue implements IQueue {
@@ -49,9 +49,8 @@ public class StringQueue implements IQueue {
     return element;
   }
   /**
-   * gets the first string in the list and removes it
-   * @return the first string if exists
-   * @ Author Rosa Dennig
+   * deletes string, but if there is no string throws NoSuchElementException
+   * @author Rosa Dennig
    */
   @Override
   public String remove() {
@@ -63,6 +62,11 @@ public class StringQueue implements IQueue {
     return element;
   }
 
+  /**
+   * gives first string but does not delete
+   * @return null if there is no string otherwise returns string
+   * @author Rosa Dennig
+   */
   @Override
   public String peek() {
     String element;
@@ -73,7 +77,11 @@ public class StringQueue implements IQueue {
 
     return element;
   }
-
+  /**
+   * gives first string but does not delete
+   * @return throws NoSuchElementException if there is no string otherwise returns string
+   * @author Rosa Dennig
+   */
   @Override
   public String element() {
     String element = peek();
