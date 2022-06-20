@@ -10,9 +10,19 @@ import java.util.NoSuchElementException;
  */
 public class DoubleQueue implements IQueue {
 
-    private List<Double> elements = new ArrayList();
+    /**
+     * queue of double numbers
+     */
+    private List<Double> elements = new ArrayList<>();
+    /**
+     *Queue size
+     */
     private int maxSize;
 
+    /**
+     * constructor of doubleQueue
+     * @param maxSize Queue size
+     */
     public DoubleQueue(int maxSize) {
         this.maxSize = maxSize;
     }
@@ -21,7 +31,6 @@ public class DoubleQueue implements IQueue {
      * adds a double to the list
      * @param obj the double
      * @return true when a double ob was added otherwise false
-     * @author Abdullah Kaitoua
      */
     @Override
     public boolean offer(Object obj) {
@@ -36,7 +45,6 @@ public class DoubleQueue implements IQueue {
     /**
      * gets the first double on the list and removes it
      * @return the first double if exists
-     * @ Author Abdullah Kaitoua
      */
     @Override
     public Object poll() {
@@ -52,7 +60,6 @@ public class DoubleQueue implements IQueue {
 
     /**
      * deletes double, but if no double throws NoSuchElementException
-     * @author Abdullah Kaitoua
      */
     @Override
     public Object remove() {
@@ -67,7 +74,6 @@ public class DoubleQueue implements IQueue {
     /**
      * gives first double but does not delete
      * @return null if there is no double otherwise returns double
-     * @author Abdullah Kaitoua
      */
     @Override
     public Object peek() {
@@ -83,7 +89,6 @@ public class DoubleQueue implements IQueue {
     /**
      * gives first double but does not delete
      * @return throws NoSuchElementException if there is no double otherwise returns double
-     * @author Abdullah Kaitoua
      */
     @Override
     public Object element() {
