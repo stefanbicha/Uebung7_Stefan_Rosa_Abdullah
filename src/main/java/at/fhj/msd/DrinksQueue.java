@@ -10,10 +10,19 @@ import java.util.NoSuchElementException;
  * @author  Abdullah Kaiouta,Rosa Dennig, Stefan Bicha
  */
 public class DrinksQueue implements IQueue {
-
-  private List<Drink> drinks = new ArrayList();
+  /**
+   * list of DrinkQueue
+   */
+  private List<Drink> drinks = new ArrayList<>();
+  /**
+   * DrinkQueue size
+   */
   private int maxSize;
 
+  /**
+   * constructor of DrinkQueue
+   * @param maxSize Queue size
+   */
   public DrinksQueue(int maxSize) {
     this.maxSize = maxSize;
   }
@@ -22,7 +31,6 @@ public class DrinksQueue implements IQueue {
    * adds a drink to the menu
    * @param obj the drink
    * @return true when a drink was added otherwise false
-   * @author Abdullah Kaitoua
    */
   @Override
   public boolean offer(Object obj) {
@@ -37,7 +45,6 @@ public class DrinksQueue implements IQueue {
   /**
    * gets the first drink on the list and removes it
    * @return the first drink if exists
-   * @ Author Abdullah Kaitoua
    */
   @Override
   public Object poll() {
@@ -53,7 +60,6 @@ public class DrinksQueue implements IQueue {
 
   /**
    * deletes object, but if no object throws NoSuchElementException
-   * @author Abdullah Kaitoua
    */
   @Override
   public Object remove() {
@@ -68,7 +74,6 @@ public class DrinksQueue implements IQueue {
   /**
    * gives first Object but does not delete
    * @return null if there is no object otherwise returns object
-   * @author Abdullah Kaitoua
    */
   @Override
   public Object peek() {
@@ -84,7 +89,6 @@ public class DrinksQueue implements IQueue {
   /**
    * gives first object but does not delete
    * @return throws NoSuchElementException if there is no object otherwise returns object
-   * @author Abdullah Kaitoua
    */
   @Override
   public Object element() {
