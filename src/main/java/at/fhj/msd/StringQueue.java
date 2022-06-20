@@ -10,9 +10,19 @@ import java.util.NoSuchElementException;
  */
 public class StringQueue implements IQueue {
 
+  /**
+   * list of StringQueue
+   */
   private List<String> elements = new ArrayList<String>();
+  /**
+   * StringQueue size
+   */
   private int maxSize;//deleted the standard value 5
 
+  /**
+   * constructor of StringQueue
+   * @param maxSize Queue size
+   */
   public StringQueue(int maxSize) {
     this.maxSize = maxSize;
   }
@@ -21,7 +31,6 @@ public class StringQueue implements IQueue {
    * adds a string to the list
    * @param obj a string
    * @return true when a string was added otherwise false
-   * @author Rosa Dennig
    */
   @Override
   public boolean offer(Object obj) {
@@ -37,7 +46,6 @@ public class StringQueue implements IQueue {
   /**
    * gets the first string of the list and removes it
    * @return the first string if it exists
-   * @ Author Rosa Dennig
    */
   @Override
   public String poll() {
@@ -50,7 +58,6 @@ public class StringQueue implements IQueue {
   }
   /**
    * deletes string, but if there is no string throws NoSuchElementException
-   * @author Rosa Dennig
    */
   @Override
   public String remove() {
@@ -65,7 +72,6 @@ public class StringQueue implements IQueue {
   /**
    * gives first string but does not delete
    * @return null if there is no string otherwise returns string
-   * @author Rosa Dennig
    */
   @Override
   public String peek() {
@@ -80,7 +86,6 @@ public class StringQueue implements IQueue {
   /**
    * gives first string but does not delete
    * @return throws NoSuchElementException if there is no string otherwise returns string
-   * @author Rosa Dennig
    */
   @Override
   public String element() {
