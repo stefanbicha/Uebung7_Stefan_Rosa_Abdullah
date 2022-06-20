@@ -15,7 +15,7 @@ public class TestDoubleQueue {
     private DoubleQueue doubleQueue;
 
     /**
-     * creates a new object of doubleQueue  (maxSize = 11) before each test case
+     * creates a new object of doubleQueue  (maxSize = 2) before each test case
      * */
     @BeforeEach
     public void setUp(){
